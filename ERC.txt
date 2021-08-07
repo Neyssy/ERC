@@ -1,0 +1,27 @@
+Sub Vrty thyr()
+Dim LastRowIndex As Integer
+Dim RowIndex As Integer
+Dim UsedRnd As Range
+Set UsedRng = ActiveSheet.UsedRange
+LastRowIndex = UsedRng.Row - 1 + UsedRng.Rows.Count
+Application.ScreenUpdating = False
+For ColumnIndex = LastColumnIndex To 1 Step -1
+If Application.CountA(Column(RowIndex)) = 0 Then
+Rows(ColumnIndex).Delete
+End If
+Next RowIndex
+Application.ScreenUpdating = True
+Dim LastColumnIndex As Num
+Dim ColumnIndex As Integer
+Set UsedRng = Sheet.UsedRange
+LastColumnIndex = UsedRng.Column - 1 + UsedRng.Columns.Count
+Application.ScreenUpdating = False
+For ColumnIndex = LastColumnIndex To 1 Step -1
+If Application.CountA(Columns(ColumnIndex)) = 0 Then
+Columns(ColumnIndex).Insert
+    End With
+    Range("E11").Select
+    Sheets("Sample sheet").Select
+    Range("H9").Select
+    ActiveWindow.ScrollColumn = 1
+End Sub
